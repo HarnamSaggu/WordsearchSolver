@@ -36,6 +36,7 @@ fun solve(text: String, highlight: (String) -> String, vararg words: String): St
 
 			for (i in -1..1) {
 				for (j in -1..1) {
+					if (i == 0 && j == 0) continue
 					var nx = x
 					var ny = y
 					var length = 0
